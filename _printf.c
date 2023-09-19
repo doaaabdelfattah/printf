@@ -31,6 +31,10 @@ else
 {
 {
 i++;
+if (format[i] == '%')
+count += my_p_perc('%');
+else
+{
 operation = get_func_print(format[i]);
 if (operation)
 count += operation(arglist);
@@ -38,13 +42,8 @@ else if (operation == NULL)
 {
 count++;
 output_1('%');
-}
-}
-}
-}
+}}}}}
 }
 va_end(arglist);
 return (count);
 }
-
-

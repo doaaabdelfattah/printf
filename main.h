@@ -30,6 +30,6 @@ int myprintf(const char *format, ...);
 int (*get_func_print(char c))(va_list);
 int my_p_char(va_list arglist);
 int my_p_string(va_list arglist);
-
+int my_p_perc(char c);
 
 #endif

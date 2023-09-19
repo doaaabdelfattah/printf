@@ -2,13 +2,9 @@
 #include <stdio.h>
 int main(void)
 {
-_printf(" first letter is %c My name is %s \n", 'd', "doaa");
-
-_printf("%s%c%c%c%s%%%s%c\n", 
-"Loading", '.', '.', '.', "99", " Please wait", '\n');
-printf("%s%c%c%c%s%%%s%c\n", 
-"Loading", '.', '.', '.', "99", " Please wait", '\n');
-_printf("css%ccs%scscses\n", 'T', "Test");
-
+int len1, len2;
+len1 = printf("%%\n");
+len2 =_printf("%%\n");
+printf("len1: %i len2 %i", len1, len2);
 return (0);
 }
