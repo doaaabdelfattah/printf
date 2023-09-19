@@ -33,6 +33,5 @@ int my_p_char(va_list arglist);
 int my_p_string(va_list arglist);
 int my_p_perc(char c);
 int my_p_int(va_list arglist);
-void conver_int(int num, char* str, int base);
-
+int get_length(int num);
 #endif
