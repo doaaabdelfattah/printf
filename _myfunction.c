@@ -17,7 +17,8 @@ int (*get_func_print(char s))(va_list)
 {
 sp_t fun_list[] = {
 {'s', my_p_string},
-{'c', my_p_char}};
+{'c', my_p_char},
+{'i', my_p_int}};
 int i;
 i = 0;
 while (fun_list[i].sp)

@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 /* Prototypes for _printf */
 int output(char *str, int bytes);
@@ -31,5 +32,7 @@ int (*get_func_print(char c))(va_list);
 int my_p_char(va_list arglist);
 int my_p_string(va_list arglist);
 int my_p_perc(char c);
+int my_p_int(va_list arglist);
+void conver_int(int num, char* str, int base);
 
 #endif
