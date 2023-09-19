@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stddef.h>
 #include <stdlib.h>
-
+#include <limits.h>
 /* Prototypes for _printf */
 int output(char *str, int bytes);
 int output_1(char c);
@@ -34,4 +34,5 @@ int my_p_string(va_list arglist);
 int my_p_perc(char c);
 int my_p_int(va_list arglist);
 int get_length(int num);
+int handle_zero(char *str);
 #endif

@@ -42,12 +42,7 @@
 {
 	count++;
 	output_1('%');
-}
-}
-}
-}
-}
-}
+}}}}}}
 	va_end(arglist);
 	return (count);
 }
