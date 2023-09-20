@@ -33,9 +33,6 @@
 	i++;
 	if (format[i] == '%')
 	count += my_p_perc('%');
-	if (format[i] == ' ')
-	{i++;
-	continue; }
 	else
 {
 	operation = get_func_print(format[i]);
