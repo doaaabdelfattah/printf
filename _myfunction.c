@@ -27,8 +27,7 @@ while (fun_list[i].sp)
 {
 if (s == fun_list[i].sp)
 return (fun_list[i].func);
-i++;
-}
+i++; }
 return (NULL);
 }
 /**
@@ -39,11 +38,9 @@ return (NULL);
 int my_p_string(va_list arglist)
 {
 int len;
-
 char *str = va_arg(arglist, char *);
 if (str == NULL)
 str = "(null)";
-
 len = 0;
 while (str[len] != '\0')
 len++;
